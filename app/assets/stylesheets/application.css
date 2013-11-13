@@ -1,0 +1,423 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+
+
+ body{
+
+  font-family: arial;
+  background-image: url("http://i279.photobucket.com/albums/kk141/BobHorschGallery/black-Linen_zps5568c5bc.png")
+
+}
+
+
+.pagecontainer{
+
+  background: white;
+  width: 1010px;
+  padding: 0px;
+
+}
+
+header{
+
+  width: 100%;
+  border-bottom: .5px solid rgb(219, 219, 219);
+
+
+}
+
+.banner{
+  border-top: solid 1px rgb(219, 219, 219);
+  border-bottom: solid 1px rgb(219, 219, 219);
+  margin-bottom: 12px;
+}
+
+.topmenu{
+
+
+    padding-top: 2px;
+    margin:0px;
+}
+
+
+
+ul{
+
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+
+  font-size: 13px;
+  text-align: center;
+  padding: 0px 11px 0px 7px;
+  margin: 0px;
+  text-decoration: none;
+  color: blue;
+  width: 50px;
+
+}
+
+.promotion{
+
+  width: 960-16px;
+  height: 38px;
+  background: #CCCCC9;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  border-bottom: 1px solid #8A8A8A;
+  border-top: 1px solid #8A8A8A;
+
+}
+
+.searchfield {
+
+  float: left;
+  padding: 5px 0px 15px 5px;
+  margin: 0px;
+  font-size: 14px;
+
+}
+
+.promotext{
+
+  font-weight: bold;
+  color: rgb(153, 0, 0);
+  padding: 10px 0px 15px 5px;
+}
+
+.main{
+
+  width: 1010x;
+  margin: 0 auto;
+
+}
+
+article{
+
+  width: 790px;
+  height: 1150px;
+
+  float: right;
+
+  padding: 0px 10px 3px 20px;
+  margin: 5px 0px;
+}
+
+.headline{
+
+  width: 100%;
+  background: white;
+  text-align: left;
+  background-color: #f5f5f1;
+  border-radius: 5px;
+
+
+}
+
+h1{
+
+  margin: 0px;
+  padding:0px;
+  font-size: 46px;
+  font-weight: normal;
+
+}
+
+
+.headline.h1{
+
+
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+p.summary{
+
+  font-size: 16px;
+
+}
+
+p.summary2{
+
+  font-size: 16px;
+}
+
+.didyouknow{
+  border-top: 1px solid gray;
+
+  padding: 10px 0px;
+}
+
+
+.photocontainer{
+
+  overflow: auto;
+  margin-top: 0px;
+}
+
+.photo{
+
+  width: 230px;
+  height: 245px;
+  background: #CFCFCF;
+  float: left;
+  font-size: 12px;
+
+  padding: 5px 5px 5px 10px;
+  margin: 5px 4px 5px 4px;
+
+
+  border-left: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  border-right: 2px solid #E8E8E8;
+  border-bottom: 2px solid #E8E8E8;
+  background: #F5F5F5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333333;
+
+
+
+
+}
+
+figcaption{
+
+  margin: 0px;
+  line-height:18px;
+}
+
+
+
+
+.navsection{
+      width: 180px;
+      height: 600px;
+      float:right;
+      margin: 5px 2px 5px 2px;
+      font-size: 13px;
+    }
+
+
+.navheader{
+
+  margin-bottom: 0px;
+  background-color: ##f5f5f1;
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 6px;
+  border-bottom: solid 1px #8A8A8A;
+
+}
+
+
+.navcontainers{
+      width: 180px;
+      background: #f5f5f1;
+      float: left;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 5px;
+
+    }
+
+.list-group-item, .list-group-item-blank {
+    padding: 5px 2px 5px 2px;
+    margin: 2px 0px;
+    border-bottom: 1px solid #A3BEE5;
+    border-radius: 3px;
+}
+
+
+.fa, .fa-chevron-right{
+  text-align: right;
+
+  color: #BF6030;
+}
+
+.fa-sign-in{
+  color: #BF6030;
+}
+
+a {
+
+  color: #2F87B2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited{
+
+  color: #2F87B2;
+  font-weight: normal
+}
+
+a:hover, a:active{
+
+  color: #246687;
+  text-decoration: none;
+}
+
+.list-group-item:hover{
+
+  text-decoration: none;
+  background-color: #B8CAE5;
+  border-radius: 3px;
+  color: #2F87B2;
+}
+
+.list-group-item-blank:hover{
+
+  text-decoration: none;
+  background-color: #f5f5f1;
+  border-radius: 3px;
+  color: #8A8A8A;
+
+}
+
+a.navlink:hover{
+
+  color: #2F87B2;
+  text-decoration: none;
+}
+
+.searchbar{
+  font-size: 14px;
+  border-radius: 3px;
+
+}
+
+
+.searchbar:focus{
+
+
+}
+
+.search_button {
+
+
+
+    background-color:   rgb(247, 140, 64);
+
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+
+    border-bottom-color: rgb(195,75,21);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    border-collapse: collapse;
+
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+
+    border-left-color: rgb(195,94,16);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(195,94,16);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-spacing: 0px 0px;
+    border-top-color: rgb(195,94,16);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-style: solid;
+    border-top-width: 1px;
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+
+    text-align: center;
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    text-shadow: rgba(0, 0, 0, 0.15) 0px -1px 0px;
+    width:  50px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-text-blink: none;
+    -moz-text-decoration-color: rgb(255, 255, 255);
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+
+    -webkit-appearance: none;
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-writing-mode: horizontal-tb;
+    color:white;
+
+}
+
+a.search_button {
+
+  color: white;
+
+}
+
+a.search_button:hover, a.search_button:active {
+  background-color: rgb(237,116,43);
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+ .footer{
+
+      width: 100%;
+      height: 30px;
+      background: #E5E5E5;
+      text-align: center;
+      font-size: 14px;
+      clear: both;
+      padding: 15px 0px 5px 0px;
+      margin: 10px auto;
+
+    }
+
+

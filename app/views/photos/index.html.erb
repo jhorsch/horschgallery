@@ -1,0 +1,129 @@
+
+
+<div class='pagecontainer'>
+
+
+<div class='topmenu' >
+  <ul>
+    <li><a href="#">How We Got Started</a></li>
+    <li><a href="#">The Photographers</a></li><li><a href="#">Compare Sizes</a></li>
+    <li><a href="#">Framing Options</a></li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">More</a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><i class="fa fa-shopping-cart"></i><a href="#">Cart</a></li>
+    <li><i class="fa fa-sign-in"></i><a href="#">My Account</a></li>
+  </ul>
+</div>
+
+
+  <div class='banner'>
+   <a href = "/photos"> <img class='logo' src='http://www.horschgallery.com/admin/uploads/Banners/chi%20sky.jpg'/></a>
+  </div>
+
+
+
+<div class='promotion' >
+    <div class='searchfield'><input class = "searchbar" type="serach" name="search" value = "  Search over 1,000 photos ..." size='33'> <a href="#" class="search_button">Search</a></div>
+    <div class= 'promotext'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNOVEMBER SALE. ENDS TUESDAY.  GET 15% OFF YOUR ORDER. &nbsp&nbsp<a href="#">*more details</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+</div>
+
+<div class= 'main'>
+
+<article class='article'>
+
+  <div class='headline' >
+    <h1>A Chicago Photograph Lasts Forever</h1>
+    <p class='summary'>Over the last 30 years Bob has documented the dynamic life and architecture of Chicago through the lens of a camera.  His photography portfolio contains a diverse selection of Chicago cityscape photos from all four colorful seasons blended with eye-catching pictures of the major Chicago sports teams and their respective home stadiums.</p>
+
+    <p class="summary2">Here you can browse through hundreds of quality & affordable photographs ranging from the early 1900's to the present day.  All of his one-of-a-kind photographs are available in a variety of styles which include vintage, modern, black & white and color prints. </p>
+
+    <p><b>Your memories of Chicago may soften over time, but a photograph of Chicago will preserve every detail.</b></p>
+
+    <p>Thanks for visiting.</p>
+
+    <p class='didyouknow'>Did you know Bob's Chicago photo gallery was on Michigan Ave. for almost 20 years?  <a href="#">Read more of his story</a></p>
+  </div>
+
+
+<div class='photocontainer'>
+  <% @photos.where(is_homepage: true).each do |photo| %>
+  <div class='photo'>
+    <a href= <%= photo_url(photo.id) %>><img src= <%= photo.image_url  %> width= "230">  </a>
+    <figcaption class="photo_thumb_title"><%= link_to photo.title, photo_url(photo.id) %><br/><%= photo.main_cat.titleize %></figcaption>
+  </div>
+  <% end %>
+</div>
+
+</article>
+
+<div class='navsection'>
+
+  <div class='navcontainers'>
+    <div class='navheader'>Customer Testimonial</div>
+    "The photographs are even more stunning in person and the frame is very professional."<br/>
+    <b>Cindy, 39 (09/13)</b><br/><a href="#">Read More Reviews</a>
+  </div>
+
+ <div class='navcontainers'>
+    <div class='navheader'>Photgraphy Portfolio</div>
+
+
+     <div class="list-group-item"><a class='navlink' href="#">Top 10 / Best Sellers</a></div>
+     <div class="list-group-item"><a class='navlink' href="#">Most Recent Photography</a></div>
+
+      <div class="list-group-item-blank"><a href="#"></a></div>
+
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Black & White</a> </div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Vintage</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Panoramas</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Cityscape</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Aerials</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Landmarks</a></div>
+
+      <div class="list-group-item-blank"><a href="#"></a></div>
+
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Blackhawks</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Bears</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Cubs</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago White Sox</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Chicago Bulls</a></div>
+
+      <div class="list-group-item-blank"><a class='navlink' href="#"></a></div>
+
+      <div class="list-group-item"><a class='navlink' href="#">New York Yankees</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Other Sports Stadiums</a></div>
+
+      <div class="list-group-item-blank"><a class='navlink' href="#"></a></div>
+
+      <div class="list-group-item"><a class='navlink' href="#">Notre Dame Football</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Big 10 College Football</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">European Cities</a></div>
+
+      <div class="list-group-item-blank"><a class='navlink' href="#"></a></div>
+
+      <div class="list-group-item"><a class='navlink' href="#">San Francisco, California</a></div>
+      <div class="list-group-item"><a class='navlink' href="#">Boston, Massachusetts</a></div>
+
+      <div class="list-group-item-blank"><a class='navlink' href="#"></a></div>
+
+      <div class="list-group-item"><a class='navlink' href="#">Nature Photography</a></div>
+
+  </div>
+</div>
+
+
+<footer class='footer'>&copy HorschGallery 2013</footer>
+
+</div>
+
+
+
+
+
+
+
