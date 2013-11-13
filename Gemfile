@@ -1,11 +1,23 @@
+ruby '2.0.0'
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
-gem 'starter_generators'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
+
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+gem 'starter_generators'
 
 
 # Use SCSS for stylesheets
