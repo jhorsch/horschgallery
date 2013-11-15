@@ -18,16 +18,21 @@
  body{
 
   font-family: arial;
-  background-image: url("http://i279.photobucket.com/albums/kk141/BobHorschGallery/black-Linen_zps5568c5bc.png")
-
+  background-image: url("http://i279.photobucket.com/albums/kk141/BobHorschGallery/black-Linen_zps5568c5bc.png");
+  margin: 0px;
 }
 
 
 .pagecontainer{
 
-  background: white;
-  width: 1010px;
+
   padding: 0px;
+
+
+  margin: 0px auto;
+
+  width: 1010px;
+  background: white;
 
 }
 
@@ -40,16 +45,18 @@ header{
 }
 
 .banner{
-  border-top: solid 1px rgb(219, 219, 219);
+
+  border-top: solid px rgb(219, 219, 219);
   border-bottom: solid 1px rgb(219, 219, 219);
-  margin-bottom: 12px;
+  margin: 10px 0px;
 }
 
-.topmenu{
+.menubar{
 
 
-    padding-top: 2px;
+    padding-top: 1px;
     margin:0px;
+
 }
 
 
@@ -59,39 +66,49 @@ ul{
 }
 
 li {
+
   display: inline-block;
 }
 
 li a {
 
-  font-size: 13px;
-  text-align: center;
+
   padding: 0px 11px 0px 7px;
   margin: 0px;
+
   text-decoration: none;
+  text-align: center;
+
   color: blue;
   width: 50px;
+  font-size: 13px;
+
 
 }
 
 .promotion{
 
-  width: 960-16px;
-  height: 38px;
-  background: #CCCCC9;
-  margin: 0px auto 0px auto;
+
+
+
   padding: 0px 0px 0px 0px;
   border-bottom: 1px solid #8A8A8A;
   border-top: 1px solid #8A8A8A;
+  margin: 0px auto 0px auto;
+
+  width: 960-16px;
+  height: 38px;
+  background: #DEDEDB;
 
 }
 
 .searchfield {
 
-  float: left;
+
   padding: 5px 0px 15px 5px;
   margin: 0px;
   font-size: 14px;
+  float: left;
 
 }
 
@@ -104,51 +121,47 @@ li a {
 
 .main{
 
-  width: 1010x;
-  margin: 0 auto;
+  width: 1010px;
+  margin: 10px auto;
 
 }
 
 article{
 
   width: 790px;
-  height: 1150px;
+  height: 1190px;
 
   float: right;
 
-  padding: 0px 10px 3px 20px;
-  margin: 5px 0px;
+  padding: 0px 10px 3px 15px;
+  margin: 0px 0px;
 }
 
 .headline{
 
-  width: 100%;
-  background: white;
-  text-align: left;
-  background-color: #f5f5f1;
+
+
+  padding: 0px 0px 0px 10px;
   border-radius: 5px;
+  margin: 0px 4px;
+
+
+  background-color: #F0F0EC;
+  width: 97%;
+  text-align: left;
 
 
 }
 
 h1{
 
-  margin: 0px;
   padding:0px;
-  font-size: 46px;
+  margin: 0px;
+
+  font-size: 44px;
   font-weight: normal;
 
 }
-
-
-.headline.h1{
-
-
-  margin: 0px;
-  padding: 0px;
-
-}
-
 
 p.summary{
 
@@ -162,8 +175,8 @@ p.summary2{
 }
 
 .didyouknow{
-  border-top: 1px solid gray;
 
+  border-top: 1px solid gray;
   padding: 10px 0px;
 }
 
@@ -171,49 +184,47 @@ p.summary2{
 .photocontainer{
 
   overflow: auto;
-  margin-top: 0px;
+  margin-top: 0px 5px 0px 5px;
+
 }
 
 .photo{
 
-  width: 230px;
+  width: 236px;
   height: 245px;
   background: #CFCFCF;
   float: left;
   font-size: 12px;
 
-  padding: 5px 5px 5px 10px;
+  padding: 10px 5px 5px 11px;
   margin: 5px 4px 5px 4px;
 
 
-  border-left: 1px solid #F5F5F5;
-  border-top: 1px solid #F5F5F5;
+  border-left: 1px solid #F0F0EC;
+  border-top: 1px solid #F0F0EC;
   border-right: 2px solid #E8E8E8;
   border-bottom: 2px solid #E8E8E8;
-  background: #F5F5F5;
-  font-family: Arial, Helvetica, sans-serif;
+
+  background: #F0F0EC;
+
   font-size: 12px;
   color: #333333;
 
-
-
-
+  border-radius: 5px;
 }
 
 figcaption{
 
   margin: 0px;
   line-height:18px;
+
 }
-
-
-
 
 .navsection{
       width: 180px;
       height: 600px;
       float:right;
-      margin: 5px 2px 5px 2px;
+      margin: 0px 2px 5px 2px;
       font-size: 13px;
     }
 
@@ -221,7 +232,7 @@ figcaption{
 .navheader{
 
   margin-bottom: 0px;
-  background-color: #f5f5f1;
+  background-color: #F0F0EC;
   color: #333;
   font-weight: bold;
   padding: 5px;
@@ -233,7 +244,7 @@ figcaption{
 
 .navcontainers{
       width: 180px;
-      background: #f5f5f1;
+      background: #F0F0EC;
       float: left;
       border-radius: 5px;
       margin-bottom: 10px;
@@ -289,7 +300,7 @@ a:hover, a:active{
 .list-group-item-blank:hover{
 
   text-decoration: none;
-  background-color: #f5f5f1;
+  background-color: #F0F0EC;
   border-radius: 3px;
   color: #8A8A8A;
 
@@ -354,7 +365,7 @@ a.navlink:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: inline-block;
-    font-family: Arial,Helvetica,sans-serif;
+
     font-size: 13px;
     font-weight: 700;
     line-height: 22px;
@@ -388,7 +399,7 @@ a.navlink:hover{
     -webkit-background-origin: padding-box;
     -webkit-background-size: auto;
     -webkit-writing-mode: horizontal-tb;
-    color:white;
+    color: white;
 
 }
 
@@ -399,15 +410,15 @@ a.search_button {
 }
 
 a.search_button:hover, a.search_button:active {
+
   background-color: rgb(237,116,43);
   text-decoration: none;
   color: white;
+
 }
 
 
-
-
- .footer{
+.footer{
 
       width: 100%;
       height: 30px;
