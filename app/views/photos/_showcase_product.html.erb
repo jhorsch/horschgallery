@@ -1,0 +1,13 @@
+<div class ='showcase container_backdrop'>
+  <h1 class='prodtitle'><strong><%= @photo.title %></strong></h1>
+
+  <img src = <%= @photo.image_url %> width = '500'>
+
+  <br>
+
+  <div class='zoom'>
+    <li class='zoombutton'><a href=<%= photo_url(@photo.id-1) %>>PREV</a></li>
+    <li class='zoombutton'><a href="#">ZOOM</a></li>
+    <li class='zoombutton'><a href=<%= photo_url(@photo.id+1) %>>NEXT</a></li>
+  </div>
+</div>

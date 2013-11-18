@@ -1,0 +1,14 @@
+
+
+
+<div class="ribbon container_backdrop"><h4>Customers Also Viewed</h4>
+  <% @photos.where(sub_cat: "#{@photo.sub_cat.downcase}").shuffle.take(8).each do |photo| %>
+    <%= link_to image_tag(photo.image_url, class: "poster-container"), photo_url(photo.id) %>
+  <% end %>
+</div>
+
+<div class='breadcrumbs'>
+   <a href='/photos'>Home</a> >
+   <a href='#'><%= @photo.main_cat.titleize %></a> >
+  <a href='#'><%= @photo.sub_cat.titleize %></a>
+</div>

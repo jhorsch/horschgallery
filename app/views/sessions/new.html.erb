@@ -1,0 +1,44 @@
+
+
+
+<div class='container_backdrop'>
+
+<h4>Already Have An Account?</h4>
+
+
+<%= form_tag sessions_url do %>
+
+<table>
+  <tbody>
+      <p class="notice"><%= notice %></p>
+
+      <tr>
+        <td><%= label_tag :email_address, "Email Address:" %></td>
+        <td><%= text_field_tag :email_address, nil, size: 30 %></td>
+      </tr>
+      <tr>
+        <td><%= label_tag :password, "Password" %></td>
+        <td><%= password_field_tag :password, nil, size: 30 %></td>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+ <div><%= submit_tag "Log In", class:"submit_button action_button" %></div>
+
+<% end %>
+
+</div>
+
+<div class='container_backdrop'>
+
+  <h4>New To Our Website?</h4>
+
+   <p>By creating an account, you will be able to add and store photographs to a favorites list so that you can:<br><br>
+
+          &nbsp&nbsp&nbsp-Easily compare photos side by side to help you make a better decision.<br><br>
+          &nbsp&nbsp&nbsp-Quickly locate your favorite photographs when you return to HorschGallery.com</p>
+
+    <div> <%= link_to 'Create An Account', new_user_url, class:"submit_button action_button" %></div>
+
+</div>

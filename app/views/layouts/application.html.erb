@@ -13,10 +13,54 @@
 
 
 
+<div class='pagecontainer'>
+
+
+    <div class='menubar' >
+        <div class='logo'><a href='/photos'><img src='/misc/logo.jpeg'></a></div>
+        <div class= 'restofmenu'>
+            <li><a href="#">How We Got Started</a></li>
+            <li><a href="#">The Photographers</a></li><li><a href="#">Compare Sizes</a></li>
+            <li><a href="#">Framing Options</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">More</a></li>
+
+            <li><a href="#"></a></li>
+        </div>
+        <div class='account_right-justify'>
+              <li><i class="fa fa-shopping-cart"></i><a href="#">Cart</a></li>
+               <% if session[:user_id] %>
+                  <li><%=  link_to "#{User.find_by(id: session[:user_id]).firstname.titleize} #{User.find_by(id: session[:user_id]).lastname.titleize}", "#" %>|<%= link_to "Sign Out", '/logout' %></li>
+                <% else %>
+                    <li><i class="fa fa-sign-in"></i><a href="/login">Sign In</a></li>
+                <% end %>
+        </div>
+
+    </div>
+
+
+    <div class='banner'>
+      <a href = "/photos"><img class='xx' src='/misc/panbw2_crop.jpg' width='1010'></a>
+    </div>
+
+
+
+    <div class='promotion' >
+      <div class='searchfield'><input class = "searchbar" type="serach" name="search" value = "  What photo are you looking for?  " size='38'> <a href="#" class="search_button action_button">Search</a></div>
+      <div class= 'promotext'>&nbsp&nbsp&nbsp&nbsp&nbspNOVEMBER SALE.&nbsp&nbspENDS TUESDAY.&nbsp&nbspGET 15% OFF YOUR ORDER. &nbsp&nbsp<a href="#">*more details</a>&nbsp&nbsp&nbsp&nbsp</div>
+    </div>
+
+
 
 
 <%= yield %>
 
+
+
+    <footer class='footer'>&copy HorschGallery 2013</footer>
+
+</div>
 
 
 </body>

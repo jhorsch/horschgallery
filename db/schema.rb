@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131110183010) do
+ActiveRecord::Schema.define(version: 20131118163049) do
 
   create_table "images", force: true do |t|
     t.string   "prod_id"
@@ -24,6 +24,15 @@ ActiveRecord::Schema.define(version: 20131110183010) do
     t.string   "main_cat"
     t.string   "sub_cat"
     t.boolean  "is_homepage"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "email_address"
+    t.string   "password_digest"
   end
 
 end

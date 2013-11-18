@@ -3,9 +3,12 @@ class CreateImages < ActiveRecord::Migration
     create_table :images do |t|
       t.string :prod_id
       t.string :title
+      t.string :main_category
+      t.string :sub_category
       t.string :image_url
-      t.decimal :price
+      t.integer :price
       t.text :desc
+      t.boolean :on_homepage
 
       t.timestamps
     end

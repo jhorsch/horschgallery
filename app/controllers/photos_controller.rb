@@ -6,6 +6,7 @@ class PhotosController < ApplicationController
 
   def show
     @photo = Image.find_by(:id => params[:id])
+    @photos = Image.all
   end
 
   def new

@@ -1,10 +1,20 @@
 
-<p> Prev  Zoom   Next  </p>
-<img src = <%= @photo.image_url %> width = '600'>
 
-<p><strong><%= @photo.title %></strong></p>
-<p><ategory:<%= @photo.sub_cat.titleize %></p>
-<p>Description: <%= @photo.desc %></p>
-<p>Price: $<%= @photo.price %></p>
 
-<%= button_tag 'Add To Cart'  %>
+<div class='main'>
+<%= render 'photo_ribbon' %>
+
+
+  <%= render 'showcase_product' %>
+  <%= render 'product_info' %>
+  <%= render 'extra_product_info' %>
+
+
+
+<%= render 'photo_description' %>
+<%= render 'hardsell' %>
+
+
+
+
+

@@ -1,0 +1,47 @@
+
+
+<div class='product_info container_backdrop'>
+
+
+
+    <div class='photo_options'>
+
+    <table>
+        <tbody>
+            <tr>
+              <td><b><%= label_tag 'choose-photo_size', 'Choose Your Size:'  %></b></td>
+              <td> <%= select_tag 'choose-size', "<option>8x10 Photo Only</option><option>8x10 Photo w/ 11x14 Mat</option><option>8x10 Photo w/ 11x14 Mat - Framed</option>".html_safe %></td>
+            </tr>
+            <tr>
+              <td><%= label_tag 'choose_mat', 'Mat Color:' %></td>
+              <td><%= select_tag 'choose_mat', "<option>Fog / Black</option><option>Bright White</option>".html_safe %></td>
+            </tr>
+            <tr>
+              <td><%= label_tag 'choose_frame', 'Frame Style:' %></td>
+              <td><%= select_tag 'choose_frame', "<option>Classic Black - Thin Rounded</option><option>Classic Black - Wide Flat</option>".html_safe %></td>
+            </tr>
+            <tr>
+              <td >Price:</td>
+              <td class='pricecolor'>$<%= @photo.price %></td>
+            </tr>
+            <tr>
+              <td><%= label_tag 'qty', 'Quantity:' %></td>
+              <td><%= select_tag 'qty', "<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>".html_safe %></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <div>
+    <a href="#" class="cart_button action_button">Add To Cart</a>
+    <a href="/login" class="fav_button"><i class="fa fa-heart"></i></a>
+    </div>
+
+</div>
+
+
+
+
+</div> <!-- 'product_info' -->
