@@ -77,6 +77,8 @@ a {
   font-weight: bold;
 }
 
+
+
 a:visited{
 
   color: #098994;
@@ -652,4 +654,44 @@ a.zoombutton {
 .quotes{
   font-size: 20px;
   font-weight: bold;
+}
+
+
+body {
+    font-size: 14px;
+    line-height: 1.3em;
+    font-family: sans-serif;
+    color: black;
+}
+
+p.quote {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    left: 2%;
+    font-family: 'Georgia', serif;
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+p.quote:before, p.quote:after {
+    color: lightgray;
+}
+
+p.quote:before {
+    content: '\201C';
+    font-size: 80px;
+    position: absolute;
+    left: -40px;
+    top: 15px;
+}
+
+p.quote:after {
+    content: '\201D';
+    font-size: 65px;
+    position: relative;
+    left: 0;
+    top: 25px;
+    float: right;
 }
