@@ -2,29 +2,37 @@
 <html>
 <head>
   <title>Horschgallery</title>
+
+
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+
+
+
+
 </head>
 <body>
-
 
 
 <div class='pagecontainer'>
 
 
     <div class='menubar' >
-        <div class='logo'><a href='/photos'><img src='/misc/logo.jpeg'></a></div>
+        <div class='logo'><a href='/photos'><img src='/misc/logo.jpg' width='100'></a></div>
         <div class= 'restofmenu'>
-            <li><a href="#">How We Got Started</a></li>
+            <li><a href="#">Our Story</a></li>
             <li><a href="#">The Photographers</a></li><li><a href="#">Compare Sizes</a></li>
             <li><a href="#">Framing Options</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">More</a></li>
+
 
             <li><a href="#"></a></li>
         </div>
@@ -33,7 +41,7 @@
                <% if session[:user_id] %>
                   <li><%=  link_to "#{User.find_by(id: session[:user_id]).firstname.titleize} #{User.find_by(id: session[:user_id]).lastname.titleize}", "#" %>|<%= link_to "Sign Out", '/logout' %></li>
                 <% else %>
-                    <li><i class="fa fa-sign-in"></i><a href="/login">Sign In</a></li>
+                    <li><i class="fa fa-sign-in"></i><%= link_to "Log In", '/login' %>|<%= link_to "Create Account", '/login' %></li>
                 <% end %>
         </div>
 
@@ -41,14 +49,30 @@
 
 
     <div class='banner'>
-      <a href = "/photos"><img class='xx' src='/misc/panbw2_crop.jpg' width='1010'></a>
+      <a href='/photos' ><img  src='/misc/panbw2_crop.jpg' width='1010'/></a>
     </div>
 
 
 
+
+
     <div class='promotion' >
-      <div class='searchfield'><input class = "searchbar" type="serach" name="search" value = "  What photo are you looking for?  " size='38'> <a href="#" class="search_button action_button">Search</a></div>
-      <div class= 'promotext'>&nbsp&nbsp&nbsp&nbsp&nbspNOVEMBER SALE.&nbsp&nbspENDS TUESDAY.&nbsp&nbspGET 15% OFF YOUR ORDER. &nbsp&nbsp<a href="#">*more details</a>&nbsp&nbsp&nbsp&nbsp</div>
+
+
+      <div class='searchfield'>
+
+
+
+          <%= form_tag( '/search', :method => "post") do %>
+            <%= text_field_tag :search, params[:search], size: 38, class: "searchbar", placeholder: "  What photo are you looking for?  " %>
+             <%= submit_tag "Search", class: "search_button action_button" %>
+         <% end %>
+
+      </div>
+
+      <div class= 'promotext'>&nbsp&nbspNOVEMBER SALE.&nbsp&nbspENDS TUESDAY.&nbsp&nbspGET 15% OFF YOUR ORDER. &nbsp<a href="#">*more details</a></div>
+
+
     </div>
 
 
@@ -58,9 +82,24 @@
 
 
 
-    <footer class='footer'>&copy HorschGallery 2013</footer>
+<footer class='footer'>&copy HorschGallery 2013
+
+
+
+
+
+
+
+</footer>
 
 </div>
+
+
+<style>
+
+
+</style>
+
 
 
 </body>

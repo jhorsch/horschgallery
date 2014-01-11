@@ -15,10 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function() {
-    $('#user').hover(function() {
-        $('#popup').show();
-    }, function() {
-        $('#popup').hide();
-    });
-});
+// $(function() {
+//   $('.image-link').magnificPopup({type:'image'});
+// });
+
+

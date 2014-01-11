@@ -2,6 +2,7 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Image.all
+    @categories = Category.all
   end
 
   def show
@@ -10,6 +11,12 @@ class PhotosController < ApplicationController
   end
 
   def new
+  end
+
+  def search
+
+       @photos = Image.search(params[:search]).order(:prod_id)
+       @query  = params[:search]
   end
 
   def create

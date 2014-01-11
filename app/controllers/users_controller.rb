@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
 
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :require_login, only: [:show, :edit, :updatge, :destroy]
+
 
   def index
     @users = User.all
@@ -22,10 +24,13 @@ class UsersController < ApplicationController
     @user.lastname = params[:user][:lastname]
 
     if @user.save
-      redirect_to users_url
+      UserMailer.welcome(@user).deliver
+      format.html { redirect_to root_path, notice: "Thanks for signing up!" }
     else
       render 'new'
     end
+
+
   end
 
   def edit
@@ -48,7 +53,6 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
-    redirect_to users_url
   end
 
 private
@@ -56,4 +60,11 @@ private
   def set_user
     @user = User.find(params[:id])
   end
+
+   def require_login
+    if params[:id] != session[:user_id]
+      redirect_to root_url, notice: "Nice try!"
+    end
+  end
+
 end

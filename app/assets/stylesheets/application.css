@@ -1,6 +1,6 @@
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
+* listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
  * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
@@ -17,7 +17,7 @@
 
  body{
 
-  font-family: arial;
+  font-family: gill sans;
   background-image: url("http://i279.photobucket.com/albums/kk141/BobHorschGallery/black-Linen_zps5568c5bc.png");
   margin: 0px;
   font-size: 14px;
@@ -26,7 +26,11 @@
 
 
 
+
+
 .restofmenu{
+
+
 
 }
 
@@ -34,7 +38,7 @@ h1{
 
   padding: 7px 0px 0px 0px;
   margin: 0px;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: normal;
 
 }
@@ -53,10 +57,19 @@ h4{
   color: #07717A;
 }
 
+.pagecontainer{
+
+
+  padding: 0px;
+  margin: 0px auto;
+  width: 1010px;
+  background: #F7F6F7;
+
+}
 
 .container_backdrop{
 
- background-color: #F7F6F7;
+ background-color: white;
  /*background-color: #F0F0EC;*/
   border-left: 1px solid #D6D6D6;
   border-top: 1px solid #D6D6D6;
@@ -91,15 +104,7 @@ a:hover, a:active{
   text-decoration: none;
 }
 
-.pagecontainer{
 
-
-  padding: 0px;
-  margin: 0px auto;
-  width: 1010px;
-  background: white;
-
-}
 
 .menubar{
 
@@ -139,7 +144,7 @@ header{
 
   border-top: solid 1px #40403E;
   border-bottom: solid 1px #40403E;
-  margin: 0px 0px 0px 0px;
+
 
 }
 
@@ -188,8 +193,12 @@ li a {
 
   padding: 5px 0px 15px 5px;
   margin: 0px;
-  font-size: 14px;
   float: left;
+
+
+}
+
+.searchbar{
 
 }
 
@@ -259,7 +268,7 @@ figcaption{
 .navheader{
 
 
-  background-color: #F7F6F7;
+  background-color: white;
   color: #333;
   font-weight: bold;
   padding: 5px;
@@ -327,22 +336,7 @@ a.navlink:hover{
   text-decoration: none;
 }
 
-.searchbar{
-  font-size: 14px;
-  border-radius: 3px;
-  line-height: 24px;
-   color: #8C8C8C;
-   padding: 0px;
-   margin: 0px;
 
-}
-
-
-
-.searchbar:focus{
-
-
-}
 
 .action_button{
 
@@ -415,8 +409,16 @@ a.action_button:hover, a.action_button:active {
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 10px;
     width: 80px;
+}
+
+.search_title{
+  margin: 10px 0px 10px 10px;
+}
+
+.search_title_zero{
+  margin: 100px 0px 0px 30px;
 }
 
 .cart_button {
@@ -453,245 +455,7 @@ a.action_button:hover, a.action_button:active {
 
     }
 
-/*=====================  show page =================*/
-
- .fav_button {
-
-
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: transparent;
-
-    background-color: rgb(243, 243, 242) ;
-
-
-    background-origin: padding-box;
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    background-size: auto auto;
-
-    border-bottom-color: rgb(205, 201, 198);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-image-outset: 0 0 0 0;
-    border-image-repeat: stretch stretch;
-    border-image-slice: 100% 100% 100% 100%;
-    border-image-source: none;
-    border-image-width: 1 1 1 1;
-
-    border-left-color: rgb(216, 213, 210);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right-color: rgb(216, 213, 210);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-top-color: rgb(221, 218, 214);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-top-style: solid;
-    border-top-width: 1px;
-
-    color: rgb(90, 85, 82);
-    cursor: pointer;
-    display: inline-block;
-    font-family: Arial,Helvetica,sans-serif;
-
-    font-size: 20px;
-    line-height: 34px;
-
-
-    outline-color: rgb(90, 85, 82);
-    outline-style: none;
-    outline-width: 0px;
-
-
-
-    position: relative;
-    text-align: center;
-    text-rendering: optimizelegibility;
-    text-decoration: none;
-    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
-
-    width: 50px;
-
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-
-}
-
-
-.fav_button:hover, .fav_button:active {
-  background-color: #E8E8E7;
-  text-decoration: none;
-  color: black;
-}
-
-
-.fix {
-margin: 5px;
-}
-
-.showcase {
-
-  width: 500px;
-  float: left;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.zoom{
-
-  margin: 0px auto;
-  text-align: center;
-  margin: 5px;
-
-}
-
-.zoombutton{
-
-  border: 1px solid #8A8A8A;
-  background-color: #F0F0EC;
-  color: gray;
-  border-radius: 2px;
-  width: 60px;
-  padding: 5px 0px;
-  color: white;
-
-
-}
-
-a.zoombutton {
-
-  color: black;
-
-}
-
-
-
-.product_info, .extra_product_info{
-
-  text-align: left;
-  width: 415px;
-  float: left;
-
-}
-
-.sellbuttons{
-  width: 100%;
-  text-align:  left;
-
-}
-
-.pricecolor{
-  font-weight: bold;
-  font-size: 16px;
-  color: rgb(153, 0, 0);
-}
-
-.poster-container {
-
-   display: inline-block;
-   padding: 10px 10px 0px 10px;
-   width: 10%;
- }
-
- .ribbon {
-
-    max-width: 100%;
-   white-space: nowrap;
-   clear: both;
-
-}
-
-.breadcrumbs{
-
-  margin-left: 10px;
-}
-
-.hardsell{
-
-    clear: both;
-}
-
-.photo_description{
-
-  float:left;
-  clear:both;
-
-  }
-
-.orangetext{
-
-  font-weight: bold;
-  color: #ED742B;
-  font-size: 16px;
-
-}
-
-
-
-
-.labeltag{
-  width: 100px;
-  text-align: left;
-  border: 2px solid black;
-}
-
-.notice{
-  color: red;
-}
-
-.stars{
-  color: #E5BB3E;
-}
-
-
-
-.quotes{
-  font-size: 20px;
-  font-weight: bold;
-}
-
-
-body {
-    font-size: 14px;
-    line-height: 1.3em;
-    font-family: sans-serif;
-    color: black;
-}
-
-p.quote {
-    width: 90%;
-    margin: 20px auto;
-    position: relative;
-    left: 2%;
-    font-family: 'Georgia', serif;
-    color: black;
-    font-size: 1.1em;
-    line-height: 1.4em;
-}
-
-p.quote:before, p.quote:after {
-    color: lightgray;
-}
-
-p.quote:before {
-    content: '\201C';
-    font-size: 80px;
-    position: absolute;
-    left: -40px;
-    top: 15px;
-}
-
-p.quote:after {
-    content: '\201D';
-    font-size: 65px;
-    position: relative;
-    left: 0;
-    top: 25px;
-    float: right;
+.myphoto{
+  position:fixed;
+  z-index: 5;
 }

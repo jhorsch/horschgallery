@@ -1,8 +1,8 @@
 
 <div class='photocontainer'>
-  <% @photos.where(is_homepage: true).order(:prod_id).each do |photo| %>
+  <% @photos.where.not(homepage_rank: 0).order(:homepage_rank).each do |photo| %>
     <div class='photo container_backdrop'>
-    <a href= <%= photo_url(photo.id) %>><img src= <%= photo.image_url  %> width= "230">  </a>
+    <a href= <%= photo_url(photo.id) %>><img src= <%= photo.image_url %> width= "230px">  </a>
     <figcaption class="photo_thumb_title"><%= link_to photo.title, photo_url(photo.id) %><br/><%= photo.main_cat.titleize %></figcaption>
     </div>
   <% end %>

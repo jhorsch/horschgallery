@@ -1,0 +1,7 @@
+<h1><%= @category.name %></h1>
+
+Sub Categories
+
+<% @categories.where(main_cat: @category.name).each do |sub_cat| %>
+  <h4><%= link_to sub_cat.name, categories_url(id: @category.id) %></h4>
+<% end %>

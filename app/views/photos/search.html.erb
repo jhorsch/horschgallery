@@ -1,0 +1,45 @@
+
+<div class= 'main'>
+
+<%= render 'navigation_section' %>
+
+
+  <div class='frontpage'>
+
+    <%  if @query.blank? %>
+
+       <h4 class='search_title_zero'>Whoops.&nbsp&nbspYou didn't enter any keywords in the search bar.  Please try again.</h4>
+
+     <%  elsif @photos.count == 0 %>
+
+        <h4 class='search_title_zero'>Whoops.&nbsp&nbspWe didn't find any photographs that matched your search.&nbsp&nbspPlease check the spelling or try again.</h4>
+
+    <% else %>
+
+      <h4 class='search_title'>Awesome!&nbsp&nbspWe found <%= pluralize(@photos.count,'photograph') %> that matched your keywords.</h4>
+
+          <div class='photocontainer'>
+
+        <% @photos.take(12).each do |photo| %>
+           <div class='photo container_backdrop'>
+            <a href= <%= photo_url(photo.id) %>><img src= <%= photo.image_url  %> width= "230">  </a>
+            <figcaption class="photo_thumb_title"><%= link_to photo.title, photo_url(photo.id) %><br/><%= photo.main_cat.titleize %></figcaption>
+          </div>
+
+    <% end %>
+
+    </div>
+
+    <% end %>
+
+
+
+
+  </div>
+
+
+</div>
+
+
+
+

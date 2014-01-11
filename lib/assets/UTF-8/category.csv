@@ -1,0 +1,74 @@
+name,main_cat,marketing_copy,is_active,meta_title,meta_desc,image_caption,run_feed,convert_bw_option
+chicago black & white,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,FALSE
+chicago vintage,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,FALSE
+chicago landmarks,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago cityscape,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+other sports stadiums,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+big 10 college football,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago aerials,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago blackhawks,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago bears,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago cubs,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago bulls,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago white sox,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+european cities,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+boston massachusetts,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+new york yankees,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+notre dame football,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+nature photography,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+most recent photography,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+top 10 gifts / best sellers,main,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+black & white chicago - horizontal,chicago black & white,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+vintage chicago sports,chicago vintage,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago sculptures,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+vintage chicago skyline,chicago vintage,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago cityscape,chicago cityscape,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago water tower,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago board of trade,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+other famous chicago landmarks,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago marathon,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+big ten college stadiums,big 10 college football,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+buckingham fountain,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago aerial views,chicago aerials,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago blackhawks players,chicago blackhawks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+old chicago stadium,chicago blackhawks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago bears players,chicago bears,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago cubs players,chicago cubs,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+soldier field,chicago bears,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+michael jordan,chicago bulls,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+millennium park,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+navy pier,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+comiskey park,chicago white sox,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+us cellular field,chicago white sox,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+soldier field aerials,chicago bears,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+wrigley building,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago theatre,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+bulls championship,chicago bulls,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+wrigley field,chicago cubs,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+black & white wrigley field,chicago cubs,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+wrigley field aerials,chicago cubs,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+2005 white sox championship,chicago white sox,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+ireland & irish pubs,euroean cities,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+fenway park,boston massachusetts,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+shea stadium,other sports stadiums,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+yankee stadium,new york yankees,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+2009 winter classic,chicago blackhawks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+trump tower chicago,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+2010 blackhawks championship,chicago blackhawks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+tall ships chicago 2010,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+black & white chicago - vertical,chicago black & white,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+chicago street cars,chicago vintage,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+camden yards,other sports stadiums,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+lambeau field,other sports stadiums,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+historic vintage chicago landmarks,chicago vintage,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+state street,chicago landmarks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+modern day chicago- thick black frame,chicago black & white,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+notre dame football,notre dame football,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+boston skyline,boston massachusetts,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+boston public garden,boston massachusetts,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+boston landmarks & attractions,boston massachusetts,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+ocean,nature photography,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+underwater life,nature photography,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+rocky landscapes,nature photography,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+2013 blackhawks stanley cup champions,chicago blackhawks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,TRUE
+blackhawks banner raising,chicago blackhawks,Here is the text to sell,TRUE,Meta Title,Meta Desc,Image  Caption,TRUE,FALSE

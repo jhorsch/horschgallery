@@ -8,10 +8,18 @@ Horschgallery::Application.routes.draw do
   post "/sessions" => 'sessions#create'
 
 
+
+
  root 'photos#index'
 
   resources :users
   resources :photos
+  resources :categories
+
+
+
+
+  post '/search' => 'photos#search'
 
   # get '/photos/new', controller: 'photos', action: 'new', :as => 'new_photo'
   # post '/photos', controller: 'photos', action: 'create'

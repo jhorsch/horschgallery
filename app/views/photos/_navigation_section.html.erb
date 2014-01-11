@@ -12,14 +12,19 @@
 
         <div class='navheader'>Photgraphy Portfolio</div>
 
+        <% @categories.where(main_cat: 'main').each do |category| %>
 
-        <div class="list-group-item" id="user"><a class='navlink'  href="#">Top 10 / Best Sellers</a></div>
-        <!--     <span id='popup'>
+            <div class="list-group-item" id="user"><a class='navlink'  href=<%= category_url(category.id) %>><%= category.name.titleize %></a></div>
+
+        <% end %>
+
+<!--         <div class="list-group-item" id="user"><a class='navlink'  href="#">Top 10 / Best Sellers</a></div>
+ -->        <!--     <span id='popup'>
           <div><a class='list-group-item' href="#">Chicago Gifts Top 10</a></div>
           <div><a class='list-group-item' href="#">Top Selling Chicago Sports</a></div>
           <div><a class='list-group-item' href="#">Top Selling Chicago Skyline</a></div>
         </span> -->
-        <div class="list-group-item" id="user"><a class='navlink' href="#">Most Recent Photography</a></div>
+    <!--     <div class="list-group-item" id="user"><a class='navlink' href="#">Most Recent Photography</a></div>
 
         <div class="list-group-item-blank"><a href="#"></a></div>
 
@@ -56,7 +61,7 @@
 
         <div class="list-group-item-blank"><a class='navlink' href="#"></a></div>
 
-        <div class="list-group-item-last"><a class='navlink' href="#">Nature Photography</a></div>
+        <div class="list-group-item-last"><a class='navlink' href="#">Nature Photography</a></div> -->
 
     </div>
 

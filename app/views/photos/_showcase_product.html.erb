@@ -1,13 +1,39 @@
+<div class='breadcrumbs'>
+   <a href='/photos'>Home</a> >
+   <a href='#'><%= @photo.main_cat.titleize %></a> >
+  <a href='#'><%= @photo.sub_cat.titleize %></a>
+</div>
+
 <div class ='showcase container_backdrop'>
   <h1 class='prodtitle'><strong><%= @photo.title %></strong></h1>
+<!--
+<a class="test-popup-link" href="<%= @photo.image_url %>">
+  <img id="myphoto" src="<%= @photo.image_url %>" width='500'>
+</a>
+ -->
 
-  <img src = <%= @photo.image_url %> width = '500'>
+<a href="<%= @photo.image_url %>" class='image-link' ><img id="myphoto" src="<%= @photo.image_url %>" width='500'>
+</a>
+
+
+
+
+
+
 
   <br>
 
   <div class='zoom'>
     <li class='zoombutton'><a href=<%= photo_url(@photo.id-1) %>>PREV</a></li>
-    <li class='zoombutton'><a href="#">ZOOM</a></li>
+    <li class='zoombutton'><a href="<%= @photo.image_url %>" class='image-link'>ZOOM</a></li>
     <li class='zoombutton'><a href=<%= photo_url(@photo.id+1) %>>NEXT</a></li>
   </div>
 </div>
+
+
+<!-- // $(document).ready(function() {
+//   $('.test-popup-link').magnificPopup({type:'image'});
+// });
+ -->
+
+
